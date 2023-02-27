@@ -23,7 +23,7 @@ public class SecurityConfig {
                 // Tarefas
                 .antMatchers(HttpMethod.GET, "/api/task/**").permitAll()
                 .antMatchers(HttpMethod.POST, "/api/task").authenticated()
-                .antMatchers(HttpMethod.DELETE, "/api/task").hasRole("ADMIN")
+                .antMatchers(HttpMethod.DELETE, "/api/task").hasRole("GERENTE")
                 
                 // Usuários
                 .antMatchers(HttpMethod.GET, "/api/user/**").permitAll()
@@ -33,7 +33,7 @@ public class SecurityConfig {
                 
                 // Web
                 .antMatchers(HttpMethod.GET, "/task").authenticated()
-                .antMatchers(HttpMethod.POST, "/task").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/task").hasRole("GERENTE")
 
                 
                 // Infra
@@ -57,7 +57,7 @@ public class SecurityConfig {
     // @Bean
     // public UserDetailsService users(){
     //     UserDetails user = User.builder()
-    //         .username("joao@fiap.com.br")
+    //         .username("gusta@fiap.com.br")
     //         .password(new BCryptPasswordEncoder().encode("123"))
     //         .roles("USER")
     //     .build();
