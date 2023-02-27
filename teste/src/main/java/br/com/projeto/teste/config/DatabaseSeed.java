@@ -39,10 +39,10 @@
 
 //         usuarioRepositorio.save(
 //             new Usuario()
-//                 .name("João")
+//                 .name("gusta")
 //                 .email("gusta@fiap.com.br")
 //                 .password(passwordEncoder.encode("123"))
-//                 .withRole(new Role("ROLE_USER", null))
+//                 .withRole(new Role("ROLE_GERENTE", null))
 //         );
 
 //         usuarioRepositorio.save(
@@ -50,7 +50,7 @@
 //                 .name("Maria")
 //                 .email("maria@fiap.com.br")
 //                 .password(passwordEncoder.encode("123")) 
-//                 .withRole(new Role("ROLE_ADMIN", null))
+//                 .withRole(new Role("ROLE_USUARIO", null))
 //         );
 //     }
     
